@@ -9,16 +9,23 @@
 // 3.Al click di una cella, essa si colora di azzurro, resituendo il numero di cella in console
 
 let play_button = document.getElementById('play-button');
+let square;
 
 play_button.addEventListener('click', function(){
-    const container = document.querySelector('div.c-square');
     for(let i=1; i<=100; i++){
-        let square;
-        square=`<div class="sq-red"></div>`;
-        console.log(square);
+        const container = document.querySelector('div.c-square');
+        square=`<button id="created-square" class="sq-red d-flex justify-content-center align-items-center">${i}</button>`;
         container.innerHTML += square;
     }
+    
+    document.getElementById('created-square').addEventListener('click', function color_change(){
+        this.classList.add('sq-aqua', 'text-dark')
+        console.log(this)
+    })
 })
+
+
+
 
 
 
