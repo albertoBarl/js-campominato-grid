@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header .col-6 div{
+    height: 75px;
+}
+
+img{
+    height: 100%;
+}
