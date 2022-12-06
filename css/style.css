@@ -17,3 +17,17 @@ header .col-6 div{
 img{
     height: 100%;
 }
+
+/* MAIN */
+.c-square{
+    max-width: 850px;
+    height: auto;
+}
+
+.sq-red{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}

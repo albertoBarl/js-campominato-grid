@@ -8,5 +8,17 @@
 // 3."Numerare" ogni cella
 // 3.Al click di una cella, essa si colora di azzurro, resituendo il numero di cella in console
 
+let play_button = document.getElementById('play-button');
+
+play_button.addEventListener('click', function(){
+    const container = document.querySelector('div.c-square');
+    for(let i=1; i<=100; i++){
+        let square;
+        square=`<div class="sq-red"></div>`;
+        console.log(square);
+        container.innerHTML += square;
+    }
+})
+
 
 
