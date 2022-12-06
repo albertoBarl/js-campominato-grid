@@ -14,13 +14,12 @@ let square;
 play_button.addEventListener('click', function(){
     for(let i=1; i<=100; i++){
         const container = document.querySelector('div.c-square');
-        square=`<button id="created-square" class="sq-red d-flex justify-content-center align-items-center">${i}</button>`;
+        square=`<button class="created-square sq-red d-flex justify-content-center align-items-center">${i}</button>`;
         container.innerHTML += square;
     }
     
-    document.getElementById('created-square').addEventListener('click', function color_change(){
-        this.classList.add('sq-aqua', 'text-dark')
-        console.log(this)
+    document.getElementsByClassName('created-square').addEventListener('click', function color_change(){
+        this.className.add('sq-aqua', 'text-dark')
     })
 })
 
