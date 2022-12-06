@@ -19,7 +19,8 @@ play_button.addEventListener('click', function(){
         
         square.addEventListener('click', function(){
             this.classList.add('sq-aqua', 'text-dark')
-            square.innerText= i
+            this.innerText= i
+            console.log(this.innerText)
         })
 
     }
