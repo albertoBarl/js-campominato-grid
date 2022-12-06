@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.h-75px{
+    height: 75px;
+    background-color: #001534;
+}
+
 /* HEADER */
 header .col-6 div{
     height: 75px;
