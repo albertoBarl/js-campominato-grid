@@ -16,7 +16,7 @@ play_button.addEventListener('click', function(){
     if(level.value == 'Level_3'){
         for(let i=1; i<=100; i++){
             let square= document.createElement('button');
-            square.classList.add('sq', 'sq-red', 'd-flex', 'justify-content-center', 'align-items-center')
+            square.classList.add('sq', 'sq-red3', 'd-flex', 'justify-content-center', 'align-items-center')
             container.appendChild(square);
             
             square.addEventListener('click', function(){
@@ -29,7 +29,7 @@ play_button.addEventListener('click', function(){
     else if(level.value == 'Level_2'){
         for(let i=1; i<=81; i++){
             let square= document.createElement('button');
-            square.classList.add('sq', 'sq-red', 'd-flex', 'justify-content-center', 'align-items-center')
+            square.classList.add('sq', 'sq-red2', 'd-flex', 'justify-content-center', 'align-items-center')
             container.appendChild(square);
             
             square.addEventListener('click', function(){
@@ -42,7 +42,7 @@ play_button.addEventListener('click', function(){
     else if(level.value == 'Level_1'){
         for(let i=1; i<=49; i++){
             let square= document.createElement('button');
-            square.classList.add('sq', 'sq-red', 'd-flex', 'justify-content-center', 'align-items-center')
+            square.classList.add('sq', 'sq-red1', 'd-flex', 'justify-content-center', 'align-items-center')
             container.appendChild(square);
             
             square.addEventListener('click', function(){

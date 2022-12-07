@@ -29,9 +29,23 @@ img{
     height: auto;
 }
 
-.sq-red{
-    width: 80px;
-    height: 80px;
+.sq-red3{
+    width: calc(800px / 10);
+    height: calc(800px / 10);
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}
+.sq-red2{
+    width: calc(800px / 9);
+    height: calc(800px / 9);
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+}
+.sq-red1{
+    width: calc(800px / 7);
+    height: calc(800px / 7);
     background-color: red;
     color: white;
     border: 1px solid black;
