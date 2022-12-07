@@ -9,6 +9,11 @@
     background-color: #001534;
 }
 
+.c-square{
+    max-width: 850px;
+    height: auto;
+}
+
 /* HEADER */
 header .col-6 div{
     height: 75px;

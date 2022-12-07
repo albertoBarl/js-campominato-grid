@@ -9,23 +9,51 @@
 // 3.Al click di una cella, essa si colora di azzurro, resituendo il numero di cella in console
 
 let play_button = document.getElementById('play-button');
+let level = document.getElementById('Livello')
 const container = document.querySelector('div.c-square');
 
 play_button.addEventListener('click', function(){
-    for(let i=1; i<=100; i++){
-        let square= document.createElement('button');
-        square.classList.add('sq', 'sq-red', 'd-flex', 'justify-content-center', 'align-items-center')
-        container.appendChild(square);
-        
-        square.addEventListener('click', function(){
-            this.classList.add('sq-aqua', 'text-dark')
-            this.innerText= i
-            console.log(this.innerText)
-        })
-
+    if(level.value == 'Level_3'){
+        for(let i=1; i<=100; i++){
+            let square= document.createElement('button');
+            square.classList.add('sq', 'sq-red', 'd-flex', 'justify-content-center', 'align-items-center')
+            container.appendChild(square);
+            
+            square.addEventListener('click', function(){
+                this.classList.add('sq-aqua', 'text-dark')
+                this.innerText= i
+                console.log(this.innerText)
+            })
+        }
     }
-    
+    else if(level.value == 'Level_2'){
+        for(let i=1; i<=81; i++){
+            let square= document.createElement('button');
+            square.classList.add('sq', 'sq-red', 'd-flex', 'justify-content-center', 'align-items-center')
+            container.appendChild(square);
+            
+            square.addEventListener('click', function(){
+                this.classList.add('sq-aqua', 'text-dark')
+                this.innerText= i
+                console.log(this.innerText)
+            })
+        }
+    }
+    else if(level.value == 'Level_1'){
+        for(let i=1; i<=49; i++){
+            let square= document.createElement('button');
+            square.classList.add('sq', 'sq-red', 'd-flex', 'justify-content-center', 'align-items-center')
+            container.appendChild(square);
+            
+            square.addEventListener('click', function(){
+                this.classList.add('sq-aqua', 'text-dark')
+                this.innerText= i
+                console.log(this.innerText)
+            })
+        }
+    }
 })
+
 
 
 
