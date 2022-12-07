@@ -52,6 +52,9 @@ play_button.addEventListener('click', function(){
             })
         }
     }
+    else{
+        alert('Scegli un livello di difficoltà')
+    }
 })
 
 
