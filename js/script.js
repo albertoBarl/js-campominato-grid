@@ -17,7 +17,7 @@ play_button.addEventListener('click', function(){
     document.querySelector('.c-square').innerHTML = ''
     // LIVELLO 3, GRIGLIA 10X10
     if(level.value == 'Level_3'){
-        for(let i=1; i<=100; i++){
+        for(let i=0; i<100; i++){
             let square= document.createElement('button');
             square.classList.add('sq', 'sq-red3', 'd-flex', 'justify-content-center', 'align-items-center');
             container.appendChild(square);
@@ -25,7 +25,7 @@ play_button.addEventListener('click', function(){
             // funzione 'click' a griglia creata
             square.addEventListener('click', function(){
                 this.classList.add('sq-aqua');
-                this.innerText= i;
+                this.innerText= i+1;
                 console.log(this.innerText);
             })
         }
@@ -33,7 +33,7 @@ play_button.addEventListener('click', function(){
 
     // LIVELLO 2, GRIGLIA 9X9
     else if(level.value == 'Level_2'){
-        for(let i=1; i<=81; i++){
+        for(let i=0; i<81; i++){
             let square= document.createElement('button');
             square.classList.add('sq', 'sq-red2', 'd-flex', 'justify-content-center', 'align-items-center');
             container.appendChild(square);
@@ -41,7 +41,7 @@ play_button.addEventListener('click', function(){
             // funzione 'click' a griglia creata
             square.addEventListener('click', function(){
                 this.classList.add('sq-aqua', 'text-dark');
-                this.innerText= i;
+                this.innerText= i+1;
                 console.log(this.innerText);
             })
         }
@@ -49,7 +49,7 @@ play_button.addEventListener('click', function(){
 
     // LIVELLO 1, GRIGLIA 7X7
     else if(level.value == 'Level_1'){
-        for(let i=1; i<=49; i++){
+        for(let i=0; i<49; i++){
             let square= document.createElement('button');
             square.classList.add('sq', 'sq-red1', 'd-flex', 'justify-content-center', 'align-items-center');
             container.appendChild(square);
@@ -57,7 +57,7 @@ play_button.addEventListener('click', function(){
             // funzione 'click' a griglia creata
             square.addEventListener('click', function(){
                 this.classList.add('sq-aqua', 'text-dark');
-                this.innerText= i;
+                this.innerText= i+1;
                 console.log(this.innerText);
             })
         }
