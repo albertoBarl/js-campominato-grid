@@ -13,6 +13,8 @@ let level = document.getElementById('Livello');
 const container = document.querySelector('div.c-square');
 
 play_button.addEventListener('click', function(){
+
+    document.querySelector('.c-square').innerHTML = ''
     // LIVELLO 3, GRIGLIA 10X10
     if(level.value == 'Level_3'){
         for(let i=1; i<=100; i++){
