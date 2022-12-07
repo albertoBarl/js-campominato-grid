@@ -24,7 +24,7 @@ play_button.addEventListener('click', function(){
             
             // funzione 'click' a griglia creata
             square.addEventListener('click', function(){
-                this.classList.add('sq-aqua', 'text-dark');
+                this.classList.add('sq-aqua');
                 this.innerText= i;
                 console.log(this.innerText);
             })
